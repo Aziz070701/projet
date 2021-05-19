@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>project</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <header>
+        <p>les règles sont : <br> 
+            • Si l'ordinateur tire 0, la mise est perdue .  <br>
+             • Si l'ordinateur tire le numéro du joueur, il rend la mise plus 35 fois sa valeur. <br>
+             • Si l'ordinateur tire un numéro pair et que l'on a choisi « Pair », il rend la mise plus 1 fois sa valeur. Même chose avec les impairs. <br>
+             • Dans tous les autres cas, la mise est perdue <br> </p>
+
+    </header>
+    <section>
+             
+    <div class="controls">
+              <div class="roue" id="roue">
+            <img id="i3" name="slide" style="width: 100%; height: 100%;" src="roue/1.png" alt="roue de nombres erreur">     
+    </div>
+    <div class="select">
+              <h2> Choisir le pari.
+                  <select id="select">
+                      <option id="ip" class="pari" value="impair">Impair</option>
+                      <option id="p" class="pari" value="pair">Pair</option>
+                      <option id="ip" class="pari" value="1">1</option>
+                      <option id="p" class="pari" value="2">2</option>
+                      <option id="ip" class="pari" value="3">3</option>
+                      <option id="p" class="pari" value="4">4</option>
+                      <option id="ip" class="pari" value="5">5</option>
+                      <option id="p" class="pari" value="6">6</option>
+                      <option id="ip" class="pari" value="7">7</option>
+                      <option id="p" class="pari" value="8">8</option>
+                      <option id="ip" class="pari" value="9">9</option>
+                      <option id="p" class="pari" value="10">10</option>
+                      <option id="ip" class="pari" value="11">11</option>
+                      <option id="p" class="pari" value="12">12</option>
+                      <option id="ip" class="pari" value="13">13</option>
+                      <option id="p" class="pari" value="14">14</option>
+                      <option id="ip" class="pari" value="15">15</option>
+                      <option id="p" class="pari" value="16">16</option>
+                      <option id="ip" class="pari" value="17">17</option>
+                      <option id="p" class="pari" value="18">18</option>
+                      <option id="ip" class="pari" value="19">19</option>
+                      <option id="p" class="pari" value="20">20</option>
+                      <option id="ip" class="pari" value="21">21</option>
+                      <option id="p" class="pari" value="22">22</option>
+                      <option id="ip" class="pari" value="23">23</option>
+                      <option id="p" class="pari" value="24">24</option>
+                      <option id="ip" class="pari" value="25">25</option>
+                      <option id="p" class="pari" value="26">26</option>
+                      <option id="ip" class="pari" value="27">27</option>
+                      <option id="p" class="pari" value="28">28</option>
+                      <option id="ip" class="pari" value="29">29</option>
+                      <option id="p" class="pari" value="30">30</option>
+                      <option id="ip" class="pari" value="31">31</option>
+                      <option id="p" class="pari" value="32">32</option>
+                      <option id="ip" class="pari" value="33">33</option>
+                      <option id="p" class="pari" value="34">34</option>
+                      <option id="ip" class="pari" value="35">35</option>
+                      <option id="p" class="pari" value="36">36</option>
+                  </select>
+              </h2> 
+                 <h3> La mise <input type="number" id="number" min="0" placeholder="mettez une mise !!!" style="text-align: center; width:100%;" value="" > </h3>    
+                  <h3> Portefeuille <input type="text" id="pmj" value="" min="0" disabled style="text-align: center; width:100%;"> k USD </h3> 
+                 <h3>Pertes : vous avez perdu : <input type="text" id="pmo" value="" min="0" disabled style="text-align: center; width: 100%;;"> k USD</h3>
+                <input type="submit" type="submit"  id="go" onclick="go()"  value="faire tourner!!" > <br>
+                 <input type="submit" type="submit" id="stop" disabled onclick="stop();" value="STOP!"> 
+          </div>
+    </div>
+
+    </section>
+    <footer>
+
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>
